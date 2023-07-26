@@ -2,10 +2,10 @@ let op;
 
 do {
   op = prompt(`Digite a operação a ser realizada.
-  1-Adição 
+  1-Soma
   2-Subtração 
-  3-Divisão 
-  4-Multiplicação
+  3-Multiplicação 
+  4-Divisão
   0-Sair`);
   if (op < "0" || op > "4") {
     alert(`Esta opção não existe.`);
@@ -19,9 +19,9 @@ do {
         case "2":
           return n1 - n2;
         case "3":
-          return n1 / n2;
-        case "4":
           return n1 * n2;
+        case "4":
+          return n1 / n2;
         default:
           alert(`Operador inválido`);
           break;
